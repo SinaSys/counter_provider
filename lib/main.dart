@@ -30,8 +30,12 @@ class MyHomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                FlatButton(onPressed: () => counter.increment(), child: Text("Increment")),
-                FlatButton(onPressed: () => counter.decrement(), child: Text("Decrement")),
+                FlatButton(
+                    onPressed: () => counter.increment(),
+                    child: Text("Increment")),
+                FlatButton(
+                    onPressed: () => counter.decrement(),
+                    child: Text("Decrement")),
               ],
             ),
             Text(counter.currentCount.toString())

@@ -6,12 +6,10 @@ class CounterModel with ChangeNotifier {
   int get currentCount => _counter;
 
   void increment() {
-     _counter = _counter>=0 ? ++_counter : 0;
-    notifyListeners();
-  }
+     _counter++;
+     notifyListeners();}
 
   void decrement() {
-    _counter = _counter>0 ? --_counter : 0;
-    notifyListeners();
-  }
+    _counter--;
+    notifyListeners();}
 }
